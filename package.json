@@ -3,15 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "scripts": {
-      "dev": "concurrently \"vite\" \"npm run watch-twind\" \"npm run serve-json\" ",
-      "build": "vite build",
-      "preview": "vite preview",
-      "watch-twind": "postcss ./src/tailwind.css -o ./src/index.css -w",
-      "serve-json": "json-server --watch -p 4040 db.json"
-    },
+    "dev": "concurrently \"vite\" \"npm run watch-twind\" \"npm run serve-json\" ",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch-twind": "postcss ./src/tailwind.css -o ./src/index.css -w",
+    "serve-json": "json-server --watch -p 4040 db.json"
+  },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@tanstack/react-query-devtools": "^4.29.15",
     "autoprefixer": "^10.4.14",
     "axios": "^1.4.0",
     "concurrently": "^8.2.0",
@@ -32,6 +36,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "vite": "^4.3.9"
+    "vite": "^4.2.0"
   }
 }
