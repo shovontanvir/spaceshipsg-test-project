@@ -26,11 +26,11 @@ const Heading = () => {
   const headingInfo = data[0];
 
   return (
-    <div className="text-center px-44">
-      <h1 className="text-4xl font-semibold leading-snug mb-6">
+    <div className="text-center lg:px-44">
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mb-4 md:mb-6">
         {headingInfo.headingText}
       </h1>
-      <p className="text-lg text-slate-600">
+      <p className=" md:text-lg text-slate-600">
         {headingInfo.descriptionParagraph}
       </p>
     </div>

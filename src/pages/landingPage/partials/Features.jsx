@@ -27,7 +27,7 @@ const Features = () => {
   const features = data;
 
   return (
-    <div className="flex flex-wrap w-5/6 my-10">
+    <div className="flex flex-wrap w-3/4 md:w-5/6 my-10">
       {/* initialize map method to render individual featureItem component with relevant content */}
       {features.map((feature, index) => (
         <FeatureItem
